@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/png;base64,iVBORw0KGgo=">
+    <title>{{ page.title }}</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+    <script src="{{ site.url }}{{ site.baseurl }}{% link assets/js/p5.min.js %}"></script>
+    <script>
+      {% include Photo.js %}
+      {% include script.js %}
+    </script>
+  </head>
+  <body>
+    {{ content }}
+    <div class="gallery">
+    </div>
+  </body>
+</html>
