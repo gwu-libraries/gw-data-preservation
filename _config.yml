@@ -21,12 +21,14 @@
 title: First Contribution Art Display
 baseurl: "/gw-data-preservation/first-contribution-art" # the subpath of your site, e.g. /blog
 url: "https://gwu-libraries.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+
 defaults:
   - scope:
       path: "test_images"
     values:
       image: true
-source: /gw-data-preservation/first-contribution-art
+
+source: first-contribution-art
 sass:
   sass_dir: _sass
   style: compact
