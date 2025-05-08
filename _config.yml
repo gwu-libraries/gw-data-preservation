@@ -26,6 +26,7 @@ defaults:
       path: "test_images"
     values:
       image: true
+source: /gw-data-preservation/first-contribution-art
 sass:
   sass_dir: _sass
   style: compact
@@ -51,5 +52,4 @@ sass:
 #   - vendor/gems/
 #   - vendor/ruby/
 
-source: first-contribution-art
 
