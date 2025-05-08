@@ -73,7 +73,7 @@ function draw() {
     contribs[i].moveImg();
     contribs[i].checkBoundary();
   }
-  filter(displaceColors);
+  //filter(displaceColors);
   pop();
   push();
   textSize(width/15);
