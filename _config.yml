@@ -1,2 +1,5 @@
 source: first-contribution-art
-
+sass:
+  sass_dir: _sass
+  style: compact
+  sourcemap: never
