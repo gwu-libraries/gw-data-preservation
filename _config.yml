@@ -19,6 +19,7 @@
 # in the templates via {{ site.myvariable }}.
 
 title: First Contribution Art Display
+description: This page is meant to be a sub-page that uses p5.js to display all first time contributions to this repository
 baseurl: "/gw-data-preservation/first-contribution-art" # the subpath of your site, e.g. /blog
 url: "https://gwu-libraries.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 
@@ -28,11 +29,35 @@ defaults:
     values:
       image: true
 
-source: first-contribution-art
+# Build settings
+markdown: kramdown
+theme: jekyll-theme-primer
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Properly handle subfolders
+permalink: pretty
+include: 
+  - "first-contribution-art"
+  - "first-contribution-art/_layouts"
+  - "first-contribution-art/_includes"
+  - "first-contribution-art/_sass"
+
+# Specify where to find layouts, includes, and sass files
+layouts_dir: first-contribution-art/_layouts
+includes_dir: first-contribution-art/_includes
 sass:
-  sass_dir: _sass
-  style: compact
-  sourcemap: never
+  load_paths:
+    - first-contribution-art/_sass
+    - first-contribution-art/assets/css
+  style: compressed
+
+#source: first-contribution-art
+#sass:
+#  sass_dir: _sass
+#  style: compact
+#  sourcemap: never
 
 # Exclude from processing.
 # The following items will not be processed, by default.
