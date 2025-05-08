@@ -26,10 +26,7 @@ defaults:
       path: "test_images"
     values:
       image: true
-sass:
-  sass_dir: _sass
-  style: compact
-  sourcemap: never
+
 
 # Exclude from processing.
 # The following items will not be processed, by default.
