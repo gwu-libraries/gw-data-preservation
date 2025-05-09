@@ -20,7 +20,7 @@
 
 title: First Contribution Art Display
 description: This page is meant to be a sub-page that uses p5.js to display all first time contributions to this repository
-baseurl: "/gw-data-preservation/first-contribution-art" # the subpath of your site, e.g. /blog
+baseurl: "/gw-data-preservation" # the subpath of your site, e.g. /blog
 url: "https://gwu-libraries.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 
 defaults:
@@ -50,7 +50,7 @@ includes_dir: first-contribution-art/_includes
 sass:
   load_paths:
     - first-contribution-art/_sass
-    - first-contribution-art/assets/css
+    - assets/css
   style: compressed
 
 #source: first-contribution-art
